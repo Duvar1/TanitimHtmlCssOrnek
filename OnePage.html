@@ -1,335 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REIS</title>
 </head>
 <body>
-    <style>
-    /* LOGO START */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px; 
-}
-.logo-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-/* LOGO END */
-
-/* MENU START */
-.menu {
-  display: flex;
-  justify-content: center;
-  font-family: "proxima-nova", Arial, sans-serif;
-}
-
-.list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.list li {
-  margin-right: 20px;
-}
-
-.list li:last-child {
-  margin-right: 0;
-}
-
-.list li a {
-  text-decoration: none;
-  color:darkolivegreen;
-  font-size: 18px;
-  font-weight: bold;
-}
-.list li a:hover {
-  color:coral;
-}
-
-/* MENU END */
-
-/* BANNER START */
-.banner {
-display: flex;
-justify-content: center;
-margin-top: 20px;
-margin-bottom: 20px;
-/* transform: scale(1.4);
-z-index: 1; */
-}
-
-.banner img {
-  max-width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 600px) {
-  .banner img {
-    max-width: 80%;
-  }
-}
-
-/* BANNER END */
-/* PRODUCTS START */
-.product-container {
-display: flex;
-justify-content: center; 
-/*align-items: center; / dikeyde ortala /
-flex-wrap: wrap; / ürünler satır sığdığında alt satıra geçsin */
-max-width: 1200px;
-margin: 0 auto;
-}
-
-.product {
-  width: calc(20% - 15px);
-  margin-right: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
-}
-
-.product:last-child { 
-  margin-right: 0;
-}
-.product img {  
-  max-width: 250px;
-  max-height: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-.product.inner-div {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 7px;
-}
-.product.outer-div{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.product hr {
-  height: 1.5px;
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 10px;
-  margin-bottom: 0;
-}
-
-@media only screen and (max-width: 1100px) {
-  .product {
-    width: calc(25.33% - 15px);
-    margin-right: 15px;
-    margin-bottom: 15px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .product img {
-  max-width: 100%;
-  height: auto;
-}
-}
-
-/* PRODUCTS END */
-
-/* FOOTER START */
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.footer img {
-  margin-right: 10px;
-}
-#appStore{
-  position: absolute;
-  bottom: 76px;
-  width: 70px;
-  height: 30px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 5px;
-}
- #googlePlay {
-  position: absolute;
-  bottom: 33px;
-  width: 70px;
-  height: 30px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 5px;
-  }
-  @media only screen and (max-width: 768px) {
-  .footer{
-  max-width: 100%;
-  height: auto;
-}
-}
-@media only screen and (max-width: 767px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer img {
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
-  #appStore, #googlePlay {
-    display: block;
-    width: 54px;
-    height: 22px;
-    /* background-color: aqua; */
-  }
-}
-
-/* FOOTER END */
-
-/* HR START*/
-.hr-container {
-  position: relative;
-}
-
-.hr-container hr {
-  border: none;
-  height: 2px;
-  background-color: gray;
-  margin: 20px 0;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hr-container p {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white; 
-  padding: 0 10px;
-  z-index: 1;
-  width: 200px;
-  text-align: center;
-}
-
-.product-container hr {
-  height: 1.5px;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: gray;
-}
-/* HR END */
-
-</style>
-
-    <!-- LOGO START-->
-    <div class="logo-container">
-        <img src="https://cdn.reiskuyumculuk.com/elfinder/files/reis_logo_desktop_yesil_04112022.v01.png" alt="Logo">
+<table style=" width: 100%; margin: 0 auto; ">  
+<tr>
+    <td colspan="6">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
+        <img src="https://cdn.reiskuyumculuk.com/elfinder/files/reis_logo_desktop_yesil_04112022.v01.png" alt="Logo" style="max-width: 100%; max-height: 100%;">
       </div>
-    <!-- LOGO END-->
-
-    <!-- MENU START -->
-    <div class="menu">
-          <ul class="list">
-            <li><a href="https://www.reiskuyumculuk.com/kolyeler">Kolyeler</a></li>
-            <li><a href="">Yüzükler</a></li>
-            <li><a href="">Bilezikler</a></li>
-            <li><a href="">Küpeler</a></li>
-            <li><a href="">Koleksiyon</a></li>
-        </ul>       
+    </td>
+  </tr>
+      <tr>
+        <td colspan="6">
+          <div style="display: flex; justify-content: center; font-family: 'proxima-nova', Arial, sans-serif;">
+            <ul style="display: flex; list-style: none; padding: 0; margin: 0;">
+              <li style="margin-right: 20px;"><a href="https://www.reiskuyumculuk.com/kolyeler" style="text-decoration: none; color: darkolivegreen; font-size: 18px; font-weight: bold;">Kolyeler</a></li>
+              <li style="margin-right: 20px;"><a href="" style="text-decoration: none; color: darkolivegreen; font-size: 18px; font-weight: bold;">Yüzükler</a></li>
+              <li style="margin-right: 20px;"><a href="" style="text-decoration: none; color: darkolivegreen; font-size: 18px; font-weight: bold;">Bilezikler</a></li>
+              <li style="margin-right: 20px;"><a href="" style="text-decoration: none; color: darkolivegreen; font-size: 18px; font-weight: bold;">Küpeler</a></li>
+              <li><a href="" style="text-decoration: none; color: darkolivegreen; font-size: 18px; font-weight: bold;">Koleksiyon</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+  <tr>
+        <td colspan="6">
+          <a href="https://www.reiskuyumculuk.com/yeni-gelenler">
+            <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+              <img src="images/banner.png" alt="Banner Resmi" style="max-width: 100%; height: auto;">
+            </div>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div style="position: relative;">
+            <hr style="width: 35%; height: 2px;  background-color: gray; ">
+            <p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background-color: white; padding: 0 10px; z-index: 1; width: 200px; text-align: center;">EN ÇOK SATILANLAR</p>
+          </div>
+        </td>
+      </tr>
+<tr  style="display: flex; justify-content: center;">
+  <td style="margin-right: 15px; margin-top: 20px;">
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/peal-line-mini-sw">
+        <img src="images/product1.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center;margin-top: 3px;">Pearl Line Mini Sw.</p>
+      <hr class="hrProduct" style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">4.950,00 TL</p>
     </div>
-    <!-- MENU END -->
-<div class="base-container">
-    <!-- BANNER START -->
-   <a href="https://www.reiskuyumculuk.com/yeni-gelenler">
-   <div class="banner">
-     <img src="images/banner.png" alt="Banner Resmi">
-   </div>
-   </a>
-  <!-- BANNER END -->
-  <br>
-  <!-- HR ALANI -->
-  <div class="hr-container">
-   <hr>
-   <p class="hr-text">  EN ÇOK SATILANLAR  </p>
- </div>
-  <!-- HR ALANI -->
-  <!-- PRODUCTS START -->
-  <div class="product-container">
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/peal-line-mini-sw">
-      <img src="images/product1.png" alt="resim açıklaması">
-    </a>
-    <p>Pearl Line Mini Sw.</p>
-     <hr class="hrProduct">
-     <p>4.950,00 TL</p>
-   </div>
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/uc-firuze-bileklik">
-      <img src="images/product2.png" alt="resim açıklaması">
-    </a><p>Üç Firuze Bileklik</p>
-     <hr class="hrProduct">
-     <p>3.750,00 TL</p>
-   </div>
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/zigi-zaga-ring">
-      <img src="images/product3.png" alt="resim açıklaması">
-    </a><p>Zigi Zaga Ring</p>
-     <hr class="hrProduct">
-     <p>2.500,00 TL</p>
-   </div>
- </div>
- <br>
- <div class="product-container">
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/peal-line-mini-sw">
-      <img src="images/product1.png" alt="resim açıklaması">
-    </a>
-    <p>Pearl Line Mini Sw.</p>
-     <hr class="hrProduct">
-     <p>4.950,00 TL</p>
-   </div>
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/uc-firuze-bileklik">
-      <img src="images/product2.png" alt="resim açıklaması">
-    </a>
-    <p>Üç Firuze Bileklik</p>
-     <hr class="hrProduct">
-     <p>3.750,00 TL</p>
-   </div>
-   <div class="product">
-    <a href="https://www.reiskuyumculuk.com/zigi-zaga-ring">
-      <img src="images/product3.png" alt="resim açıklaması">
-    </a>
-    <p>Zigi Zaga Ring</p>
-     <hr class="hrProduct">
-     <p>2.500,00 TL</p>
-   </div>
- </div>
-  <!-- PRODUCTS END -->
-  <!-- FOOTER START -->
-  <footer class="footer">
-   <img src="images/footer.png" alt="footer image">
-   <a href="https://apps.apple.com/tr/app/reis-kuyumculuk/id1351262423?l=tr" id="appStore"></a>
-   <a href="lhttps://play.google.com/store/apps/details?id=com.tsoft.reiskuyumculuk&hl=tr&gl=US&pli=1" id="googlePlay"></a>
- </footer>
-  <!-- FOOTER END -->
-</div>
+  </td>
+  <td style="margin-right: 15px; margin-top: 20px;">
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/uc-firuze-bileklik">
+        <img src="images/product2.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center;margin-top: 3px;">Üç Firuze Bileklik</p>
+      <hr class="hrProduct"style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">3.750,00 TL</p>
+    </div>
+  </td>
+  <td style=" margin-top: 20px;">
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/zigi-zaga-ring">
+        <img src="images/product3.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center; margin-top: 3px;">Zigi Zaga Ring</p>
+      <hr class="hrProduct" style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">2.500,00 TL</p>
+    </div>
+  </td>
+</tr>
+<br>
+<tr  style="display: flex; justify-content: center;">
+  <td style="margin-right: 15px; ">
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/peal-line-mini-sw">
+        <img src="images/product1.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center;margin-top: 3px;">Pearl Line Mini Sw.</p>
+      <hr class="hrProduct" style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">4.950,00 TL</p>
+    </div>
+  </td>
+  <td style="margin-right: 15px;">
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/uc-firuze-bileklik">
+        <img src="images/product2.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center;margin-top: 3px;">Üç Firuze Bileklik</p>
+      <hr class="hrProduct"style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">3.750,00 TL</p>
+    </div>
+  </td>
+  <td>
+    <div class="product">
+      <a href="https://www.reiskuyumculuk.com/zigi-zaga-ring">
+        <img src="images/product3.png" alt="resim açıklaması" style="max-width: 200px; max-height: 150px; height: auto; margin-bottom: 10px;">
+      </a>
+      <p style=" display: flex; justify-content: center; margin-top: 3px;">Zigi Zaga Ring</p>
+      <hr class="hrProduct" style="width: 42%;height: 2px; border: none;background-color: gray ;">
+      <p style=" display: flex; justify-content: center;">2.500,00 TL</p>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <footer class="footer" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; position: relative;">
+      <img src="images/footer.png" alt="footer image" style="max-width: 100%; margin-bottom: 15px;">
+      <a href="https://apps.apple.com/tr/app/reis-kuyumculuk/id1351262423?l=tr" id="appStore" style="position: absolute; bottom: 85px; width: 85px; height: 40px; display: block;"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.tsoft.reiskuyumculuk&hl=tr&gl=US&pli=1" id="googlePlay" style="position: absolute; bottom: 40px; width: 85px; height: 40px; display: block;"></a>
+    </footer>
+  </td>
+</tr>
+</table>
 </body>
 </html>
+
+  
